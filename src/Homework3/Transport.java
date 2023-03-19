@@ -1,6 +1,6 @@
 package Homework3;
 
-public abstract class Transport {
+public abstract class Transport implements ServiceStationInterface {
     private final String modelName;
     private final int wheelsCount;
 
@@ -16,7 +16,10 @@ public abstract class Transport {
     public int getWheelsCount() {
         return wheelsCount;
     }
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
+
+    public abstract void updateTyre();
+
+
 }
+
+
